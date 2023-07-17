@@ -1,0 +1,47 @@
+.user-item{
+    display: flex;
+    gap: 10px;
+}
+.jumbotron{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    padding: 0 40px;
+}
+.slides {
+    display: flex;
+    gap: 10px;
+    overflow-y: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slides > img {
+    scroll-snap-align: start;
+}
+
+.slides img {
+    width: 290px;
+    height: 185px;
+    object-fit: cover;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+.card{
+    color: white;
+    background-color: black;
+}
+.card-body {
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-widht:600px) {
+    
+}
